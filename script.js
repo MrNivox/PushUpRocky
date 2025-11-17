@@ -1,13 +1,13 @@
 
 
-
-function Randomize()
+function Randomize(y)
 {
-x = Math.random() * 52
+x = Math.floor(Math.random() * y + 1)
+document.getElementById("Cont-left").src = "/Deck/" + Math.floor(x) + ".png"
 
 
 
 
 
 }
-Randomize()
+Randomize(54)
