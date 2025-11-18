@@ -1,14 +1,73 @@
 body{
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
     height: 100dvh;
     width: 100dvh;
+    margin: auto;
+
 
 }
 img{
     border-radius: 15px;
     border: 1px solid black;
+    margin-left: 20px;
+
+}
+#Cont-Title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Cont-Mid {
+
+    display: flex;
+    flex-direction: column;
+    font-size: larger;
+
+}
+.Info{
+    position: relative;
+}
+
+.InfoText{
+    display:none;
+    height: 17dvh;
+    width: 20dvh;
+    background-color: lightblue;
+    z-index: 1000;
+    position:absolute;
+    margin: none;
+    top:-16dvh;
+    left: 50px;
+    font-size: 2dvh;
+    
+ 
+    
+}
+
+.Info:hover  .InfoText{
+    display:block;
+   
+
+}
+
+#MultiplierDiv {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+label {
+    font-size: 2dvh;
+}
+input {
+    font-size: 2dvh;
+    width: 4dvh;
+ 
 }

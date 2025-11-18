@@ -6,12 +6,39 @@
     <title>Document</title>
     <script defer src="/script.js"></script>
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+   
+   <div id="Title"> <h1> Push Up Rocky </h1> </div>
 
+   <div id="Cont-Title"> 
     <img id="Cont-left" src="BackCardReal.jpg" height="300px">
-    <div id="Cont-Right"> b</div>
+    <div id="Cont-Mid">
+      <div>
+          <label for="cards">Range from 1 to:</label>
+          <input type="number" id="cards" name="cards" min="1" max="100" value="1">
 
+      </div>
+       
+      <div id ="MultiplierDiv">
+           <label for="cards"> Choose a multiplier:</label>
+           <input type="number" id="cards" name="cards" min="1" max="100" value="1">
+           <div class="Info">
+             <img src="image.png" height="20">  
+             <div class="InfoText"> 
+                    Multiplier increases the number of push ups per card value
+                    . For example, with a multiplier of 2, a card value of 5 would require 10 push ups. 
+             </div>
+           </div>
+      </div>
+
+       
+    </div>
+    
+    
+   </div>
+   <button onclick="Randomize(54)"> Random Card </button>
     
     
 </body>
